@@ -1,0 +1,47 @@
+---
+# Testnet deployment plan for StealthPay.
+#
+# This is a template. Regenerate it against your own deployer with:
+#
+#   export DEPLOYER_MNEMONIC="<your 24-word testnet mnemonic>"
+#   clarinet deployments generate --testnet --low-cost
+#
+# then apply it with:
+#
+#   clarinet deployments apply --testnet
+#
+# Contracts deploy in dependency order: the SIP-010 trait first, then the mock
+# token that implements it, then the core contract that uses it. Replace
+# <DEPLOYER-STX-ADDRESS> with your testnet address (the one derived from
+# DEPLOYER_MNEMONIC) before applying, or just let `generate` fill it in.
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "https://blockstream.info/testnet/api"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: sip-010-trait
+            expected-sender: <DEPLOYER-STX-ADDRESS>
+            cost: 8000
+            path: contracts/traits/sip-010-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: mock-usdcx
+            expected-sender: <DEPLOYER-STX-ADDRESS>
+            cost: 20000
+            path: contracts/mock-usdcx.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: stealth-payroll
+            expected-sender: <DEPLOYER-STX-ADDRESS>
+            cost: 40000
+            path: contracts/stealth-payroll.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.1"

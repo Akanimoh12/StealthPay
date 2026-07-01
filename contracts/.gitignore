@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+coverage/
+history.txt
+*.log
+
+# Never commit a real mnemonic / deployer key.
+settings/Mainnet.toml
+.env

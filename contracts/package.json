@@ -1,0 +1,20 @@
+{
+  "name": "stealthpay-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "StealthPay claim-pool private payroll contracts for Stacks (Clarity 3).",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:report": "vitest run -- --coverage --costs"
+  },
+  "devDependencies": {
+    "@stacks/clarinet-sdk": "^3.21.0",
+    "@stacks/transactions": "^7.5.0",
+    "chokidar-cli": "^3.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.1",
+    "vitest-environment-clarinet": "^3.0.2"
+  }
+}

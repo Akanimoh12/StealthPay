@@ -1,0 +1,14 @@
+[network]
+name = "testnet"
+stacks_node_rpc_address = "https://api.testnet.hiro.so"
+bitcoin_node_rpc_address = "https://blockstream.info/testnet/api"
+deployment_fee_rate = 10
+
+# Provide the deployer mnemonic via environment before generating/applying a
+# testnet deployment. Do NOT commit a real mnemonic.
+#
+#   export DEPLOYER_MNEMONIC="your 24 word testnet mnemonic"
+#
+[accounts.deployer]
+mnemonic = "${DEPLOYER_MNEMONIC}"
+balance = 100_000_000

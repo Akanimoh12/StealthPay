@@ -1,0 +1,25 @@
+[project]
+name = "stealthpay-contracts"
+description = "StealthPay claim-pool private payroll on Stacks."
+authors = []
+telemetry = false
+cache_dir = "./.cache"
+requirements = []
+
+[contracts.sip-010-trait]
+path = "contracts/traits/sip-010-trait.clar"
+clarity_version = 3
+epoch = 3.1
+
+[contracts.mock-usdcx]
+path = "contracts/mock-usdcx.clar"
+clarity_version = 3
+epoch = 3.1
+
+[contracts.stealth-payroll]
+path = "contracts/stealth-payroll.clar"
+clarity_version = 3
+epoch = 3.1
+
+[repl.analysis]
+passes = ["check_checker"]
