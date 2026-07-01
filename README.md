@@ -4,7 +4,7 @@
 
 ### Private payroll on Bitcoin. Pay your team in USDCx & sBTC — without exposing salaries on-chain.
 
-**[🚀 Live Site](https://stealthpay.vercel.app)** · **[🎥 Demo Video](https://www.loom.com/share/your-loom-id)** · **[📊 Pitch Deck](https://your-pitch-deck-link.com)**
+**[🚀 Live Site](https://stealthpay-pi.vercel.app/)** · **[🎥 Demo Video](https://www.loom.com/share/your-loom-id)** · **[📊 Pitch Deck](https://your-pitch-deck-link.com)**
 
 *Built on Stacks · Powered by USDCx & sBTC*
 

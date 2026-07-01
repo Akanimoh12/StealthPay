@@ -50,6 +50,12 @@ export default function Nav() {
               </li>
             ))}
           </ul>
+          <a
+            href="/dashboard"
+            className="rounded text-sm font-medium text-ink-soft transition-colors hover:text-ink"
+          >
+            Launch app
+          </a>
           <a href="#waitlist" className="btn-primary !px-5 !py-2.5">
             Join Waitlist
           </a>

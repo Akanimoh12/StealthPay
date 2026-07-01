@@ -30,3 +30,11 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# testnet deployer secret — NEVER commit
+.deployer.testnet.json
+.employee.testnet.json
+
+# one-off deployment scripts (read gitignored secrets locally)
+deploy-testnet.mjs
+lifecycle-testnet.mjs
